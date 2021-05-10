@@ -63,12 +63,96 @@
       </div>
     </nav>
     <!-------------------------------------------------------------- MAIN ------------------------------>
-    <main></main>
+
+    <main class="sale_details">
+      <article>
+        <header class="flexcol">
+          <div class="images_banner">
+            <img
+              src="../uploads/articles_vendus/Wroclaw-11.jpg"
+              alt="Photo d'une affiche représentant Charles Mingus en dessin"
+            />
+          </div>
+        </header>
+        <h1 class="display-5">Photo d'une affiche représentant Charles Mingus</h1>
+        <span>dans <a href="/categories/art">Art</a></span>
+        <hr>
+        <h2 class="display-6">Description</h2>
+        <div class="flexblock flexwrap">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Haec para/doca illi, nos admirabilia dicamus. Memini vero, inquam; Duo Reges: constructio interrete. Minime vero istorum quidem, inquit. Nulla erit controversia. Esse enim, nisi eris, non potes. At enim hic etiam dolore. 
+            Quaerimus enim finem bonorum. Equidem e Cn. Cur deinde Metrodori liberos commendas? Ut pulsi recurrant? 
+            Quare conare, quaeso. Ut aliquid scire se gaudeant? Facillimum id quidem est, inquam. Confecta res esset. 
+            Satis est ad hoc responsum. Ita graviter et severe voluptatem secrevit a bono. Torquatus, is qui consul cum Cn. Et quidem, inquit, vehementer errat; 
+            Primum quid tu dicis breve? Graece donan, Latine voluptatem vocant. Sin aliud quid voles, postea. Contemnit enim disserendi elegantiam, confuse loquitur. Quo igitur, inquit, modo? 
+          </p>
+        </div>
+        <hr>
+        <h2 class="display-6">Retrait</h2>
+        <div class="adress_formatter m_1em">
+          <!-- @TODO Ajout google map Api pour affichage -->
+          <span class="material-icons-outlined material-icons">
+            place
+          </span>
+          <strong>63578</strong> - <em>PETIT VILLAGE AUVERGNAT</em>
+        </div>
+      </article>
+
+      <aside>
+        <section class="bid_widget flexcol">
+          <div class="flexline">
+            <span class="material-icons-outlined material-icons"> face </span>
+            <a href="profil/profil_display.html">JojoLaFrite</a>
+          </div>
+          <div class="flexline">
+            Enchère en cours: 850
+            <span class="material-icons-outlined material-icons">
+                payments
+              </span></span
+            >
+          </div>
+          <div class="flexline">
+            31/12/2021 à 17h42<span
+              class="material-icons-outlined material-icons"
+            >
+              access_time_filled
+            </span>
+          </div>
+          <form method="POST" action="#" class="flexcol flexjustifycenter">
+            <label for="bidAmount" class="form-label centre"
+              >Enchérir sur cet article :
+            </label>
+            <div class="flexline flexnowrap">
+              <input
+                id="bidAmount"
+                type="number"
+                name="bidAmount"
+                min="870"
+                max="10000"
+                step="1"
+                class="form-control bid_input"
+                placeholder="870"
+                aria-label="870"
+                aria-describedby="bid-amount_icon"
+              />
+              <span class="input-group-text" id="bid-amount_icon"
+                ><span class="material-icons-outlined material-icons">
+                  payments
+                </span></span
+              >
+            </div>
+            <button class="btn btn-primary">J'enchéris !</button>
+          </form>
+          <div class="alert alert-danger mxst" role="alert">
+            A simple danger alert—check it out!
+          </div>
+        </section>
+      </aside>
+    </main>
 
     <!-------------------------------------------------------------- FOOTER ------------------------------>
 
     <footer>
-      <p>&copy;2021 TrocEnchères | Jo Riviera</p>
+      <p><small>&copy;2021 TrocEnchères | Jo Riviera</small></p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"

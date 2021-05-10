@@ -13,6 +13,11 @@
       crossorigin="anonymous"
     />
     <link href="./css/MiseEnPage.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <title>ENI Encheres - Accueil</title>
   </head>
   <body>
@@ -20,6 +25,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">ENI - ENCHERES</a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -46,14 +52,44 @@
     <!-------------------------------------------------------------- MAIN ------------------------------>
     <main>
       <header>
-        <h1>LISTE DES ENCHERES</h1>
-        <hr />
+        <h1 class="centre">Liste des enchères</h1>
+        <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">En cours</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              aria-current="page"
+              aria-disabled="true"
+              href="/profil/connexion.html"
+              title="Connectez-vous à votre compte pour cet affichage"
+              >Participées</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              aria-current="page"
+              aria-disabled="true"
+              href="/profil/connexion.html"
+              title="Connectez-vous à votre compte pour cet affichage"
+              >Remportées</a
+            >
+          </li>
+        </ul>
         <!-- Filtres de recherche -->
-        <section class="flexblock m_1em">
-          <p>Filtrer les annonces :</p>
-          <form class="flexblock" action="index.html" method="GET">
+        <section class="flexblock flexjustifycenter mxst">
+          <form
+            class="flexblock flexspaceeven"
+            action="index.html"
+            method="GET"
+          >
+            <!-- Recherche-->
             <div class="flexline">
-              <label for="filter-search">Rechercher :</label>
+              <span class="material-icons-outlined material-icons">
+                search
+              </span>
               <input
                 type="text"
                 name="filter-search"
@@ -71,7 +107,6 @@
                 aria-label="Catégorie de votre article"
                 id="categorie_article"
                 name="categorie"
-                required
               >
                 <option value="" disabled selected hidden>
                   Veuillez choisir la catégorie...
@@ -83,10 +118,11 @@
                 <option value="jeux_jouets">Jeux et jouets</option>
                 <option value="vetements">Vêtements</option>
               </select>
-              <button type="submit" class="btn btn-secondary">
-                Lancer la recherche
-              </button>
             </div>
+            <!-- Button -->
+            <button type="submit" class="btn btn-secondary mxsl">
+              Filtrer
+            </button>
           </form>
         </section>
       </header>

@@ -13,6 +13,10 @@
       crossorigin="anonymous"
     />
     <link href="./css/MiseEnPage.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>ENI Encheres - Accueil</title>
   </head>
   <body>
@@ -20,6 +24,10 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="/index.html">ENI - ENCHERES</a>
+        <div class="pointsDisplay" title="Mes Points disponibles">
+          0
+          <span class="material-icons-outlined material-icons"> payments </span>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -55,7 +63,139 @@
       </div>
     </nav>
     <!-------------------------------------------------------------- MAIN ------------------------------>
-    <main></main>
+    <main>
+      <header>
+        <h1 class="centre">Liste des enchères</h1>
+        <ul class="nav nav-tabs nav-fill">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">En cours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Participées</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Remportées</a>
+          </li>
+        </ul>
+        <!-- Filtres de recherche -->
+        <section class="flexblock flexspaceeven mxst">
+          <form
+            class="flexblock flexspaceeven"
+            action="index.html"
+            method="GET"
+          >
+            <!-- Recherche-->
+            <div class="flexline">
+              <span class="material-icons-outlined material-icons">
+                search
+              </span>
+              <input
+                type="text"
+                name="filter-search"
+                id="filter-search"
+                placeholder="Filtrer par mot-clé..."
+              />
+            </div>
+            <!-- Catégorie -->
+            <div class="flexline">
+              <label for="categorie_article" class="form-label"
+                >Catégorie</label
+              >
+              <select
+                class="form-select"
+                aria-label="Catégorie de votre article"
+                id="categorie_article"
+                name="categorie"
+              >
+                <option value="" disabled selected hidden>
+                  Veuillez choisir la catégorie...
+                </option>
+                <option value="ameublement">Ameublement</option>
+                <option value="art">Art</option>
+                <option value="cuisine">Cuisine</option>
+                <option value="multimedia">Multimédia</option>
+                <option value="jeux_jouets">Jeux et jouets</option>
+                <option value="vetements">Vêtements</option>
+              </select>
+            </div>
+            <!-- Button -->
+            <button type="submit" class="btn btn-secondary mxsl">
+              Filtrer
+            </button>
+          </form>
+        </section>
+      </header>
+      <section>
+        <ul class="grid_list list_nodecor">
+          <li class="article_card">
+            <!-- Article card -->
+
+            <img
+              src="uploads/articles_vendus/Wroclaw-11.jpg"
+              alt="Photo d'une affiche représentant Charles Mingus en dessin"
+            />
+            <div class="flexcol m_1em">
+              <h1>Photo d'une affiche représentant Charles Mingus</h1>
+              <span>dans <a href="/categories/art">Art</a></span>
+              <hr />
+              <p>
+                Vendeur : <a href="profil/profil_display.html">JojoLaFrite</a>
+              </p>
+              <p>Prix: 850p</p>
+              <p>Fin des enchères: 31/12/2021</p>
+              <p>
+                Retrait à: <br />
+                Petit Village Auvergnat - 63578
+              </p>
+            </div>
+          </li>
+          <li class="article_card">
+            <!-- Article card -->
+
+            <img
+              src="uploads/articles_vendus/Wroclaw-11.jpg"
+              alt="Photo d'une affiche représentant Charles Mingus en dessin"
+            />
+            <div class="flexcol m_1em">
+              <h1>Photo d'une affiche représentant Charles Mingus</h1>
+              <span>dans <a href="/categories/art">Art</a></span>
+              <hr />
+              <p>
+                Vendeur : <a href="profil/profil_display.html">JojoLaFrite</a>
+              </p>
+              <p>Prix: 850p</p>
+              <p>Fin des enchères: 31/12/2021</p>
+              <p>
+                Retrait à: <br />
+                Petit Village Auvergnat - 63578
+              </p>
+            </div>
+          </li>
+          <li class="article_card">
+            <!-- Article card -->
+
+            <img
+              src="uploads/articles_vendus/Wroclaw-11.jpg"
+              alt="Photo d'une affiche représentant Charles Mingus en dessin"
+            />
+            <div class="flexcol m_1em">
+              <h1>Photo d'une affiche représentant Charles Mingus</h1>
+              <span>dans <a href="/categories/art">Art</a></span>
+              <hr />
+              <p>
+                Vendeur : <a href="profil/profil_display.html">JojoLaFrite</a>
+              </p>
+              <p>Prix: 850p</p>
+              <p>Fin des enchères: 31/12/2021</p>
+              <p>
+                Retrait à: <br />
+                Petit Village Auvergnat - 63578
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <!-------------------------------------------------------------- FOOTER ------------------------------>
 

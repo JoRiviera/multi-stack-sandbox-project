@@ -12,7 +12,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link href="./css/MiseEnPage.css" rel="stylesheet" />
+    <link href="../css/MiseEnPage.css" rel="stylesheet" />
     <title>ENI Encheres - Connexion</title>
   </head>
   <body>
@@ -45,25 +45,33 @@
     </nav>
 
     <!-------------------------------------------------------------- MAIN ------------------------------>
-    <main>
-      <h1>Connexion</h1>
+    <main class="flexcol flexaligncenter">
+      <h1 class="display-3">Connexion</h1>
       <form action="/index_logged.html" method="get">
         <!-- Server error feedback -->
         <p class="alert alert-danger" role="alert">
           Ceci est un message d'erreur personnalisable.
         </p>
-        <label for="identifiant">Pseudo ou email: </label>
-        <input type="text" name="identifiant" id="identifiant" required />
-        <label for="password">Mot de passe : </label>
-        <input type="text" name="password" id="password" required />
+        <div class="flexline">
+          <label for="identifiant">Pseudo ou email: </label>
+          <input type="text" name="identifiant" id="identifiant" required />
+        </div>
+        <div class="flexline">
+          <label for="password">Mot de passe : </label>
+          <input type="text" name="password" id="password" required />
+        </div>
 
-        <button type="submit" class="btn btn-success">CONNEXION</button>
-        <a href="/"
-          ><button type="button" class="btn btn-secondary">RETOUR</button></a
-        >
-        <a href="/profil/inscription.html"
-          ><button type="button" class="btn btn-primary">S'inscrire</button></a
-        >
+        <div class="flexline flexspaceeven">
+          <button type="submit" class="btn btn-success">CONNEXION</button>
+          <a href="/"
+            ><button type="button" class="btn btn-secondary">RETOUR</button></a
+          >
+          <a href="/profil/inscription.html"
+            ><button type="button" class="btn btn-primary">
+              S'inscrire
+            </button></a
+          >
+        </div>
       </form>
     </main>
 

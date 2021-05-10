@@ -60,7 +60,9 @@ img {
 .flexcenter {
   align-items: space-around;
 }
-
+.flexaligncenter {
+  align-items: center;
+}
 .flexspaceeven {
   justify-content: space-evenly;
 }
